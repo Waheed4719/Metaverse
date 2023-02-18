@@ -1,5 +1,6 @@
 import Head from 'next/head';
 
+import { DisplayModeProvider } from '../contexts/DisplayModeContext';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }) => (
@@ -11,7 +12,9 @@ const MyApp = ({ Component, pageProps }) => (
       <link rel="preconnect" href="https://stijndv.com" />
       <link rel="stylesheet" href="https://stijndv.com/fonts/Eudoxus-Sans.css" />
     </Head>
-    <Component {...pageProps} />
+    <DisplayModeProvider>
+      <Component {...pageProps} />
+    </DisplayModeProvider>
   </>
 );
 
