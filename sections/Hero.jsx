@@ -38,7 +38,7 @@ const Hero = () => {
           className="relative w-full md:-mt-[20px] -mt-[12px]"
         >
           <div
-            className={`absolute w-full h-[300px] ${
+            className={`absolute w-full h-[300px] transition-bg duration-1000 ease-in-out ${
               isDarkMode ? "hero-gradient-dark" : "hero-gradient-light"
             } rounded-tl-[140px] z-[0] -top-[30px]`}
           />
