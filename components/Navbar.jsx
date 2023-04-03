@@ -37,7 +37,7 @@ const Navbar = () => {
             src={isDarkMode ? "/sun.svg" : "/moon.svg"}
             onClick={toggleDarkMode}
             alt="menu"
-            className="w-[24px] h-[24px] object-contain text-white"
+            className="w-[24px] h-[24px] object-contain text-white cursor-pointer"
           />
           <img
             src="/menu.svg"
